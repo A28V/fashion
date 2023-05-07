@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Order, OrderItem
+from .models import Order, OrderItem,pay_status
 
 
 class OrderItemInline(admin.TabularInline):
@@ -14,5 +14,11 @@ class OrderAdmin(admin.ModelAdmin):
     inlines = [OrderItemInline]
 
 
+class payStatusAdmin(admin.ModelAdmin):
+    list_display = ['userId','email','ORDERID','amount','orderSTATUS','DATE']
+
+
 admin.site.register(Order, OrderAdmin)
+#admin.site.register(pay_status,payStatusAdmin)
+
 

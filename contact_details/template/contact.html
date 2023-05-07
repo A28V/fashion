@@ -94,7 +94,7 @@
         event.preventDefault();
         serializedata = $(this).serializeArray();
         $.ajax({
-            url: '{% url 'contact- user' %}',
+            url: '{% url 'contact-user' %}',
             type: 'POST',
             data: serializedata,
             success: function (data) {

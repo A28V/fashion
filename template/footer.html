@@ -53,8 +53,8 @@
                         </div>
                         <div class="footer-list">
                             <ul>
-                                <li><a href="#">Login</a></li>
-                                <li><a href="#">Register</a></li>
+                                <li><a href="{% url 'login' %}">Login</a></li>
+                                <li><a href="{% url 'reg' %}">Register</a></li>
                                 <!-- <li><a href="#">Help</a></li>
                                 <li><a href="#">Support</a></li> -->
                             </ul>
@@ -68,10 +68,8 @@
                         </div>
                         <div class="footer-list">
                             <ul>
-                                <li><a href="#">FAQs</a></li>
-                                <li><a href="#">Returns</a></li>
-                                <li><a href="#">About us</a></li>
-                                <li><a href="#">Store location</a></li>
+                                <li><a href="{% url 'faq' %}">FAQs</a></li>
+                                <li><a href="{% url 'aboutus' %}">About us</a></li>
                             </ul>
                         </div>
                     </div>
@@ -114,7 +112,7 @@
     <div class="copyright">
         <div class="container">
             <div class="Copy text-center">
-                Copyright <a href="#">Amciran Fashion</a> © 2023. All Right Reserved..
+                Copyright <a href="{% url 'home' %}">Amciran Fashion</a> © 2023. All Right Reserved..
             </div>
         </div>
     </div>

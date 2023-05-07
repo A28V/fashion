@@ -9,24 +9,31 @@ a:hover,a:visited,a:focus,a:active {text-decoration: none !important;outline: no
 .h1{font-size: 55px !important; color: #ad0000 !important;font-weight: 700 !important;text-align: center;padding: 30px 0px;}
 /* ----------------------------------------signup--------------------------------------------------------- */
 
+
 .banner-sign-up{background: url(../images/login_banner.jpg)center/cover;height: 750px;box-shadow:inset 0px 0px 0px 500px #ffffff40;}
-.wrapper-login{position: relative;max-width: 420px;width: 100%;background: #fff; padding: 34px; border-radius: 6px;
-  box-shadow: 0 5px 10px #00000033;right: -35rem;  top: 8rem;background: transparent;backdrop-filter: blur(10px);}
-.wrapper-login h2{position: relative;font-size: 22px;font-weight: 600;color: #fff;}
-.wrapper-login h2::before{content: '';position: absolute;left: 0;bottom: 0;height: 3px;width: 28px;border-radius: 12px;background: #4070f4;}
-.wrapper-login form{margin-top: 30px;}
-.wrapper-login form .input-box{height: 52px;margin: 18px 0;}
-form .input-box input{height: 100%;width: 100%;outline: none;padding: 0 15px;font-size: 17px;font-weight: 400;color: #ffffff;
-  border: 1.5px solid #fff;border-bottom-width: 2.5px;border-radius: 6px;transition: all 0.3s ease;background: transparent;}
+.wrapper{position: relative;max-width: 430px;width: 100%;background: #fff; padding: 34px; border-radius: 6px;
+  box-shadow: 0 5px 10px #00000033;right: -34rem;top: 7rem;background: transparent;backdrop-filter: blur(10px);}
+.wrapper h2{position: relative;font-size: 22px;font-weight: 600;color: #333;}
+.wrapper h2::before{content: '';position: absolute;left: 0;bottom: 0;height: 3px;width: 28px;border-radius: 12px;background: #4070f4;}
+.wrapper form{margin-top: 30px;}
+.wrapper form .input-box{height: 52px;margin: 18px 0;}
+form .input-box input{height: 100%;width: 100%;outline: none;padding: 0 15px;font-size: 17px;font-weight: 400;color: #333;
+  border: 1.5px solid #C7BEBE;border-bottom-width: 2.5px;border-radius: 6px;transition: all 0.3s ease;background: transparent;}
 .input-box input:focus,.input-box input:valid{border-color: #4A9E27;}
 form .policy{display: flex;align-items: center;}
-form h3{color: #fff;font-size: 14px;font-weight: 500;margin-left: 10px;}
-.input-box.button input{color: #fff;letter-spacing: 1px;border: 1px solid #fff;background: #2b7e0500;cursor: pointer;color: #fff;}
-.input-box.button input:hover{background: #e32222;color: #ffffff;border: none;transition: 1s}
-form .text h3{color: #fff;width: 100%;text-align: center;}
+form h3{color: #707070;font-size: 14px;font-weight: 500;margin-left: 10px;}
+.input-box.button input{color: #fff;font-size: 18px; letter-spacing: 1px;border: 1px solid #0000000f;background: #2b7e0500;cursor: pointer;color: #000000;}
+.input-box.button input:hover{background: #4A9E27;color: #fff;}
+form .text h3{color: #333;width: 100%;text-align: center;}
 form .text h3 a{color: #4070f4;text-decoration: none;}
 form .text h3 a:hover{text-decoration: underline !important;}
-
+.block_title h5{font-size: 15px;}
+.match-inputs{font-size: 10px;display: flex;flex-wrap: wrap;line-height: 5px;gap: 5px;}
+.match-inputs .invalid{color: #e70303;}
+.match-inputs .valid{color: #40e100;}
+.match-inputs .valid::before{content: "\f00c";font-family: FontAwesome;font-size: 10px;color: #40e100;}
+.valid_info_empty_none{display: none !important;}
+  
 
 /*-------------------------------------------------- signup end-------------------------------------------------------- */
 
@@ -34,29 +41,25 @@ form .text h3 a:hover{text-decoration: underline !important;}
 
 /* -----------------------------------------------------login------------------------------------------------------------- */
 
-.login{background: url(../images/login_banner.jpg)center/cover;height: 750px;box-shadow:inset 0px 0px 0px 500px #ffffff40;}
 
-.login form {height: 450px;width: 400px;background: transparent; position: absolute;transform: translate(-50%, -50%);top: 60%;left: 50%;border-radius: 10px;  backdrop-filter: blur(10px);border: 2px solid #0000001a;box-shadow: 0 5px 10px #00000033;
+.login{background: url(../images/login_banner.jpg)center/cover;height: 750px;box-shadow:inset 0px 0px 0px 500px #ffffff40;}
+.login form {height: 450px;width: 400px;background: transparent; position: absolute;transform: translate(-50%, -50%);top: 60%;
+  left: 50%;border-radius: 10px;  backdrop-filter: blur(10px);border: 2px solid #0000001a;box-shadow: 0 5px 10px #00000033;
   padding: 50px 35px;}
 
-.login form * {font-family: 'Poppins', sans-serif;color: #fff;letter-spacing: 0.5px;outline: none;border: none;}
-
-.login form h2{position: relative;font-size: 22px;font-weight: 600;color: #fff;}
+.login form * {font-family: 'Poppins', sans-serif;color: #000000;letter-spacing: 0.5px;outline: none;border: none;}
+.login form h2{position: relative;font-size: 22px;font-weight: 600;color: #333;}
 .login form h2::before{content: '';position: absolute;left: 0;bottom: 0;height: 3px;width: 26px;border-radius: 12px;background: #4070f4;}
 .login label {display: block;margin-top: 30px;font-size: 16px;font-weight: 500;}
-
 .login input {display: block;height: 50px;width: 100%;background-color: #00000012;border-radius: 3px;padding: 0 10px;
-  margin-top: 8px;font-size: 14px;font-weight: 300;color: #000;}
-
-.login ::placeholder {color: #fff;}
-
-.login button {margin-top: 50px;width: 100%;background-color: #ffffff00;color: #fff;padding: 15px 0;font-size: 18px;font-weight: 500;
-  border-radius: 5px;cursor: pointer;border: 1px solid#000;}
+  margin-top: 8px;font-size: 14px;font-weight: 300;}
+.login ::placeholder {color: #000000;}
+.login button {margin-top: 50px;width: 100%;border: 1px solid #00000015; background-color: #ffffff00;color: #080710;padding: 15px 0;font-size: 18px;font-weight: 500;
+  border-radius: 5px;cursor: pointer;}
 .login form .input-box{height: 52px;margin: 18px 0;}
-
-.login button:hover{background: #e32222;transition: .4s;color: #fff;border: none;}
+.login button:hover{background: #4A9E27;transition: .4s;color: #fff;}
 .login form h3{color: #707070;font-size: 14px;margin-left: 10px;}
-.login form .text h3{color: #fff;width: 100%;text-align: center;}
+.login form .text h3{color: #333;width: 100%;text-align: center;}
 .login form .text h3 a{color: #4070f4;text-decoration: none;}
 .login form .text h3 a:hover{text-decoration: underline !important;}
 /* --------------------------------------------------------login end--------------------------------------------------------------- */
@@ -209,7 +212,7 @@ header .navbar .links .btn:hover{background-color: #a10404;color: #ffffff;border
 /* banner-2 start */
 .banner-2{padding-bottom: 70px;}
 .banner-2 .banner-wrap{position: relative;overflow: hidden;}
-.banner-2 .banner-wrap a img{  width: 100%;}
+.banner-2 .banner-wrap a img{  width: 100%;transition: 1s;}
 .banner-wrap:hover a img{transform: scale(1.1);}
 .banner-2 .banner-wrap .content{position: absolute;top: 30%;left: 15%;}
 .banner-2 .banner-wrap .content h3{  line-height: 39px;font-size: 30px;color: #363535;margin: 0 0 30px;}
@@ -256,9 +259,9 @@ header .navbar .links .btn:hover{background-color: #a10404;color: #ffffff;border
 .blog-area{padding: 100px 0px;}
 .blog-area .section-title{margin-bottom: 45px;}
 .blog-area .section-title p{font-size: 14px;font-weight: 400;line-height: 24px;color: #333333;margin-bottom: 15px;}
-.blog-area .blog-wrap:hover .blog-img a img{transform: scale(1.1);transition: 5s;}
+.blog-area .blog-wrap:hover .blog-img a img{transform: scale(1.1);}
 .blog-area .blog-wrap .blog-img{margin-bottom: 25px;overflow: hidden;}
-.blog-area .blog-wrap .blog-img a img{width: 100%;transition: 5s;}
+.blog-area .blog-wrap .blog-img a img{width: 100%;transition: 1s;}
 .blog-area .blog-wrap .blog-content h3{font-weight: 700;font-size: 20px;margin: 7px 0 8px;text-align: center;}
 .blog-area .blog-wrap .blog-content a{color: inherit;line-height: inherit;text-decoration: none;cursor: pointer;color: #333;}
 .blog-area .blog-wrap .blog-meta{text-align: center;}

@@ -3,7 +3,7 @@ from .models import OrderItem
 from .forms import OrderCreateForm
 from cart.cart import Cart
 from order.models import pay_status
-
+from django.http import HttpResponseRedirect;
 def order_create(request):
     cart = Cart(request)
     if request.method == 'POST':
@@ -18,11 +18,18 @@ def order_create(request):
                     quantity=item['quantity']
                 )
             #cart.clear()
-        return render(request, 'orders/order/pay.html', {'order': order,'cart':cart})
+        if request.session['userid']:
+            return render(request, 'orders/order/pay.html', {'order': order,'cart':cart})
+        else:
+            return HttpResponseRedirect('/login')
     else:
         form = OrderCreateForm()
         cart = Cart(request)
-    return render(request, 'orders/order/create.html', {'form': form,'cart':cart})
+        if(request.session['userid']):
+            return render(request, 'orders/order/create.html', {'form': form,'cart':cart})
+        else:
+            request.session['url_key']='/orders/create'
+            return HttpResponseRedirect('/login')
 
 
 def pay(request):

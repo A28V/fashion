@@ -62,10 +62,17 @@ class paystatus(models.Model):
     STATUS = models.CharField('STATUS', max_length=12,default='process')
     TXNDATE = models.DateTimeField('TXN DATE', default=timezone.now)
 
+pay_status_change=(
+    ('process','process'),
+    ('complete','complete')
+)
+
 class pay_status(models.Model):
     userId = models.IntegerField("userId")
     email = models.CharField('Email', max_length=30)
     ORDERID = models.CharField('ORDER ID', max_length=30)
     amount = models.CharField('AMOUNT', max_length=30)
-    orderSTATUS = models.CharField('STATUS', max_length=12,default='process')
+    orderSTATUS = models.CharField('STATUS', max_length=12,choices=pay_status_change)
     DATE = models.DateTimeField('DATE', default=timezone.now)
+
+

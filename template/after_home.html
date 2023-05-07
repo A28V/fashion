@@ -6,7 +6,7 @@
     <div class="container">
         <div class="row mian-silder">
             <div class="col-xl-6 col-md-6 single-silder-image">
-                <div class="silder-image" sty>
+                <div class="silder-image">
                     <img src="{% static '/images/slider-hm2-1.webp' %}" alt="">
                 </div>
             </div>
@@ -16,7 +16,7 @@
                     <h2>top sale</h2>
                     <h6>new collection 2022</h6>
                     <div class="slider-btn">
-                        <a class="animated" href="#">shopping now</a>
+                        <a class="animated" href="{% url 'shop' %}">shopping now</a>
                     </div>
                 </div>
             </div>
@@ -155,29 +155,41 @@
     </div>
 </section>
 <!--categories product-area start -->
-<!-- timer section start -->
-<section class="deal-area-img">
+<!-- banner-2 start -->
+<section class="banner-2">
     <div class="container">
         <div class="row">
-            <div class="col-md-6">
-                <div class="deal-content">
-                    <h3>Sale 30%</h3>
-                    <h2>Big Weekend Sale</h2>
-                    <div class="timer">
-                        <script>(function (d, s, id) { var js, pjs = d.getElementsByTagName(s)[0]; if (d.getElementById(id)) return; js = d.createElement(s); js.id = id; js.src = "//www.tickcounter.com/static/js/loader.js"; pjs.parentNode.insertBefore(js, pjs); }(document, "script", "tickcounter-sdk"));</script>
-                        <a data-type="countdown" data-id="4047685" class="tickcounter"
-                            style="display: block; width: 300px; height: 132px; margin: 0 auto" title="Countdown"
-                            href="//www.tickcounter.com/"></a>
+            <div class="col-lg-6 col-md-6">
+                <div class="banner">
+                    <div class="banner-wrap">
+                        <a href="#">
+                            <img src="{% static '/images/banner_1.webp' %}" alt="">
+                        </a>
+                        <div class="content">
+                            <h3>Fashionable<br> ladies Bag</h3>
+                            <a href="#">shop now</a>
+                        </div>
                     </div>
-                    <div class="button">
-                        <a href="./shop-jeans.html" target="_self">view more</a>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6">
+                <div class="banner">
+                    <div class="banner-wrap">
+                        <a href="#">
+                            <img src="{% static '/images/banner_2.webp' %}" alt="">
+                        </a>
+                        <div class="content">
+                            <h3>Dj Fashion<br> Man Shoes</h3>
+                            <a href="#">shop now</a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
 </section>
-<!------------------------------ timer secton------------------------ -->
+<!-------------------------------- banner-2 end--------------------------------- -->
+
+
 
 
 <!-- product list start -->
@@ -212,6 +224,29 @@
     </div>
 </section>
 <!-- product list end -->
+<!-- timer section start -->
+<section class="deal-area-img">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="deal-content">
+                    <h3>Sale 30%</h3>
+                    <h2>Big Weekend Sale</h2>
+                    <div class="timer">
+                        <script>(function (d, s, id) { var js, pjs = d.getElementsByTagName(s)[0]; if (d.getElementById(id)) return; js = d.createElement(s); js.id = id; js.src = "//www.tickcounter.com/static/js/loader.js"; pjs.parentNode.insertBefore(js, pjs); }(document, "script", "tickcounter-sdk"));</script>
+                        <a data-type="countdown" data-id="4047685" class="tickcounter"
+                            style="display: block; width: 300px; height: 132px; margin: 0 auto" title="Countdown"
+                            href="//www.tickcounter.com/"></a>
+                    </div>
+                    <div class="button">
+                        <a href="./shop-jeans.html" target="_self">view more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!------------------------------ timer secton------------------------ -->
 
 
 <!------------------------- blog area start------ -------------->
