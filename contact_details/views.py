@@ -19,4 +19,4 @@ def contactUser(request):
 	message=request.POST.get('message')
 	datauser = ContactDetails(name=name,email=email,subject=subject,contact_number=contact_number,message=message)
 	datauser.save()
-	return HttpResponse("Your message sent successfully.Our Team will contact coming soon")
+	return HttpResponse("Thank you for letting us know! If you have any other questions or concerns, feel free to ask.")
